@@ -18,42 +18,28 @@ class LinkedList {
             }
         }
     }
-    public void prime(){
-        int maxNumber= 1000;
+    public void addNumbers() {
+        Scanner sc = new Scanner(System.in);
+        int i =sc.nextInt();
+        int num=0;
+        for (int j = 1; j<=i; j++) {
+            System.out.println("Enter " + j + " number");
+            num = sc.nextInt();
 
-        System.out.println("List of the prime number between 1 - " + maxNumber);
-
-        for (int num = 2; num <= maxNumber; num++)
-        {
-            boolean isPrime = true;
-            for (int i=2; i <= num/2; i++)
-            {
-                if ( num % i == 0)
-                {
-                    isPrime = false;
-                    break;
-                }
-            }
-
-            if ( isPrime == true ) {
-                //Node temp = head;
-                Node newNode = new Node(num);      //Creating new node
-                if (head == null) {
-                    head = newNode;
-                    tail = newNode;
-                }
-                else
-                {
-                    newNode.next = head;
-                    head = newNode;
-                }
+            Node newNode = new Node(num);      //Creating new node
+            if (head == null) {
+                head = newNode;
+                tail = newNode;
+            } else {
+                newNode.next = head;
+                head = newNode;
             }
         }
     }
     /*
     * Prime numbers generated are in Descending order converting into Ascending order using sortList Method
     * */
-    public void sortList()
+    public void sortNumbers()
     {
 
         // Node current will point to head
