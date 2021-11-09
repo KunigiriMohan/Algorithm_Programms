@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sort {
+public class Primenumbers {
 
     public static void main(String[] args) {
         LinkedList list = new LinkedList();             //Creating object of LinkedList class
