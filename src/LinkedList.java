@@ -18,9 +18,6 @@ class LinkedList {
             }
         }
     }
-    /*
-    *adding numbers to LinkedList using addNumbers() method
-    */
     public void addNumbers() {
         Scanner sc = new Scanner(System.in);
         int i =sc.nextInt();
